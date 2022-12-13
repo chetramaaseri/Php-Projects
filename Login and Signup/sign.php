@@ -21,20 +21,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
         }
     }
-
-
-
-
-
 }
 
 
 ?>
-
-
-
-
-
 
 <!doctype html>
 <html lang="en">
@@ -52,8 +42,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-
-
 
     <?php
     if ($user) {
