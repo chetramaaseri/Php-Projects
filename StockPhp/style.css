@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+
+}
+i{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* Login and Signup page */
+.login-container,
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    gap: 30px;
+}
+form{
+    width: 80%;
+}
+form .text-field{
+    margin: 20px auto;
+}
+form .text-field label {
+    position: relative;
+    top: -80px;
+}
+form .text-field input {
+    width: 100%;
+    height: 50px;
+    padding: 10px 0 10px 15px;
+}
+form .text-field h1{
+    margin-bottom: 10px;
+}
+.signup_link {
+    margin-top: 20px;
+}
+.button,
+.add-cart,
+.checkout-btn,
+.proceed-btn,
+.logout-btn,
+.back-btn{
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    padding: 10px 5px;
+    width: 100%;
+    position: relative;
+    bottom: 15px;
+    background-color: #c6d4ff;
+}
+.signup-container{
+    height: 600px;
+}
+
+
+/* Stock Buy Page */
+.profile{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: 1px solid black;
+}
+.logout-btn{
+    position: static;
+    width: 120px;
+}
+.stock-container{
+    border: 1px solid black;
+    padding: 30px;
+    position: absolute;
+    margin:auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+	display: flex;
+	gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+	flex-wrap: wrap;
+    overflow-y: scroll;
+}
+.product-container{
+    border: 1px solid black;
+    height: 180px;
+    width: 230px;
+    position: relative;
+}
+.stock-name {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 20px 10px;
+    width: 95%;
+    border: none;
+}
+.stock-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.stock-details .st-price {
+    border: none;
+    font-size: 25px;
+    width: 60%;
+}
+.stock-details input {
+    font-size: 20px;
+    padding-left: 15px;
+    width: 70px;
+    height: 55px;
+}
+.add-cart{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.checkout-btn {
+    width: 170px;
+    position: absolute;
+    right: 10%;
+    bottom: 2%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Checkout Page */
+.back-btn {
+    position: absolute;
+    top: 101px;
+    left: 121px;
+    width: 80px;
+    height: 40px;
+}
+.checkout-container{
+    border: 1px solid black;
+    padding: 50px 0;
+    width: 50%;
+    max-height: 530px;
+    margin: 100px 120px;
+    overflow-y: scroll;
+}
+.checkout-container h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cart-list{
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td input[type="number"] {
+    width: 50px;
+    height: 45px;
+    padding-left: 5px;
+}
+
+.final-total {
+	width: 270px;
+	height: 200px;
+	border: 1px solid black;
+	padding: 25px;
+	position: absolute;
+	top: 20%;
+	right: 20%;
+}
+.final-total p{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.final-total span{
+    font-size: 30px;
+}
+.proceed-btn{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+    font-size: 20px;
+}
+/* Bill Page */
+.customer-detail {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 40px;
+    margin: 4px 25px;
+}
